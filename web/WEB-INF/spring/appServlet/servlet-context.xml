@@ -28,4 +28,15 @@
 
 
     <context:component-scan base-package="whiteowl.weplan" />
+
+    <!-- Interceptor -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/*/*.do"/>
+            <beans:bean
+                    class="whiteowl.weplan.common.interceptor.ViewNameInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
 </beans>
