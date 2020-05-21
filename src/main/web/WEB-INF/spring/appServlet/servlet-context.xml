@@ -15,7 +15,7 @@
                 class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
         <beans:property name="definitions">
             <beans:list>
-                <beans:value>classpath:tiles/*.xml</beans:value>
+                <beans:value>/WEB-INF/tiles/*.xml</beans:value>
             </beans:list>
         </beans:property>
         <beans:property name="preparerFactoryClass"
@@ -39,4 +39,4 @@
     </mvc:interceptors>
 
 
-</beans>
+</beans:beans>
